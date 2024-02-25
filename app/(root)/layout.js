@@ -7,8 +7,8 @@ import BottomBar from "@components/BottomBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Halo Chat App",
-  description: "A Next.js 14 Chat App ",
+  title: "CSE Tour 2K24",
+  description: " Departmental Tour department of  CSE Arranged by  CSE-12 Batch ",
 };
 
 export default function RootLayout({ children }) {

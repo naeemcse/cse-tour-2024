@@ -103,7 +103,7 @@ const Contacts = () => {
                   alt="profile"
                   className="profilePhoto"
                 />
-                <p className="text-base-bold">{user.username}</p>
+                <p className="text-base-bold">{user.personName}</p>
               </div>
             ))}
           </div>
@@ -127,7 +127,7 @@ const Contacts = () => {
                 <div className="flex flex-wrap gap-3">
                   {selectedContacts.map((contact, index) => (
                     <p className="selected-contact" key={index}>
-                      {contact.username}
+                      {user.personName}
                     </p>
                   ))}
                 </div>

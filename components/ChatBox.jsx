@@ -27,9 +27,9 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
             alt="group-photo"
             className="profilePhoto"
           />
-        ) : (
+        ) : ( 
           <img
-            src={otherMembers[0].profileImage || "/assets/person.jpg"}
+            src={ "/assets/person.jpg" ||otherMembers[0].profileImage }
             alt="profile-photo"
             className="profilePhoto"
           />

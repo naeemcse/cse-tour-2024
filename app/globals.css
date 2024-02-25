@@ -9,7 +9,14 @@
     border-radius: 2px;
   }
 }
+/* custom css  */
+h1{
+  font-size:36px;
+}
 
+h2{
+  font-size:24px;
+}
 /* Login & Register Pages */
 .auth {
   @apply w-full h-lvh flex items-center justify-center;

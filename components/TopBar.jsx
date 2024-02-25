@@ -18,8 +18,8 @@ const TopBar = () => {
 
   return (
     <div className="topbar">
-      <Link href="/chats">
-        <img src="/assets/logo.png" alt="logo" className="logo" />
+      <Link href="/">
+        <img  src="/assets/logo.png" alt="logo" className="logo max-w-12 max-h-10" />
       </Link>
 
       <div className="menu">
@@ -51,6 +51,8 @@ const TopBar = () => {
             alt="profile"
             className="profilePhoto"
           />
+         <p className="text-0.25 mr-5">{user?.personName && user.personName.split(' ')[0]}</p>
+
         </Link>
       </div>
     </div>
