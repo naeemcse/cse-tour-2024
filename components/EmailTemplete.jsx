@@ -12,6 +12,8 @@
 
 export const EmailTemplate = ({ firstName, id, mobile, tShirtSize }) => (
   <div style={{ fontFamily: 'Arial, sans-serif', color: '#333' }}>
+      <p style={{ color: '#48bb78' }}> Hellow  {firstName} , Wllcome </p> 
+
    <div style={{ background: '#0070f3', padding: '20px', textAlign: 'center', color: '#fff', marginBottom: '0' }}>
   <h1 style={{ fontSize: '2rem', fontWeight: 'bold', margin: '0' }}>CSE-tour 2K24</h1>
   <p style={{ fontSize: '1rem', margin: '0' }}>Arranged by CSE-12 Batch</p>
