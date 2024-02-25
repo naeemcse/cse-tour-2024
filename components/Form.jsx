@@ -43,7 +43,7 @@ const Form = ({ type }) => {
       });
 
       if (res.ok) {
-        router.push("/");
+        router.push("/login");
       }
 
       if (res.error) {

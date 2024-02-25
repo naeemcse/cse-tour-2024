@@ -3,9 +3,7 @@ import { connectToDB } from "@mongodb";
 import { hash } from "bcryptjs";
 
 import { EmailTemplate } from "@components/EmailTemplete";
-import { NextResponse } from "next/server";
 import { Resend } from "resend";
-
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
