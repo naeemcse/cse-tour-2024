@@ -10,6 +10,8 @@ import MessageBox from "./MessageBox";
 import { pusherClient } from "@lib/pusher";
 
 const ChatDetails = ({ chatId }) => {
+  const [refreshFlag, setRefreshFlag] = useState(false);
+
   const [loading, setLoading] = useState(true);
   const [chat, setChat] = useState({});
   const [otherMembers, setOtherMembers] = useState([]);
@@ -56,9 +58,16 @@ const ChatDetails = ({ chatId }) => {
         }),
       });
 
-      if (res.ok) {
-        setText("");
-      }
+     if (res.ok) {
+      // Clear the text input
+      setText("");
+      // Trigger a re-render by updating some state (e.g., update a counter)
+     
+    } else {
+      // If the response is not okay, throw an error with the status text
+      throw new Error(`Failed to send message: ${res.statusText}`);
+    }
+
     } catch (err) {
       console.log(err);
     }
@@ -143,7 +152,7 @@ const ChatDetails = ({ chatId }) => {
                 className="profilePhoto"
               />
               <div className="text">
-                <p>{otherMembers[0].username}</p>
+                <p>{otherMembers[0].personName}</p>
               </div>
             </>
           )}
@@ -165,7 +174,7 @@ const ChatDetails = ({ chatId }) => {
             <CldUploadButton
               options={{ maxFiles: 1 }}
               onUpload={sendPhoto}
-              uploadPreset="upecg01j"
+              uploadPreset="ml_default"
             >
               <AddPhotoAlternate
                 sx={{

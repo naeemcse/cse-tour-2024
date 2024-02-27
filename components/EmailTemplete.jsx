@@ -59,7 +59,6 @@ export const EmailTemplate = ({ firstName, id, mobile, tShirtSize }) => (
 
     <p style={{ marginTop: '20px', fontSize: '1.25rem', fontWeight: 'bold', color: '#48bb78' }}>Wishing you a wonderful time at CSE-tour 2K24!</p>
     <p style={{ marginTop: '20px', fontSize: '1rem', fontWeight: 'bold', }}> Developed by <b> Najmul Islam Naeem </b>  </p>
-
   </div>
 );
 

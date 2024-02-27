@@ -20,7 +20,7 @@ const Footer = () => {
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
 
-            <h2> Developed By: Najmul Islam Naeem  </h2>
+            <p> Developed By: <span className="kanit-extralight"> Najmul Islam Naeem </span> </p>
           <a href="https://twitter.com/N_I_Naeem" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"

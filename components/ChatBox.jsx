@@ -39,7 +39,7 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
           {chat?.isGroup ? (
             <p className="text-base-bold">{chat?.name}</p>
           ) : (
-            <p className="text-base-bold">{otherMembers[0]?.username}</p>
+            <p className="text-base-bold">{otherMembers[0]?.personName}</p>
           )}
 
           {!lastMessage && <p className="text-small-bold">Started a chat</p>}

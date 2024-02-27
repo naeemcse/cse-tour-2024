@@ -45,7 +45,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a> Who Participated </a>
+                <a href="/allperson"> Who Participated </a>
               </li>
               <li>
             <a href="/tourplane" className="font-mono mx-2"> Tour Timeline </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <a> Who Participated </a>
+            <a href="/allperson"> Who Participated </a>
             </li>
             <li>
             <a href="/tourplane" className="font-mono mx-2"> Tour Timeline </a>
