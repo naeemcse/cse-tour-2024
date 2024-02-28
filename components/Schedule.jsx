@@ -148,11 +148,11 @@ export default function CustomizedTreeView() {
         sx={{ overflowX: 'hidden' }}
       >
         <StyledTreeItem nodeId="1" label="01.03 ( Day 03) ">
-          <StyledTreeItem nodeId="2" label="Morninng upto 10AM">
+          <StyledTreeItem nodeId="2" label="Morninng upto 9AM">
             <StyledTreeItem nodeId="7" label="Saint Martin" />
             <StyledTreeItem nodeId="8" label="Breakfast" />
             </StyledTreeItem>
-            <StyledTreeItem nodeId="3" label="11 AM">
+            <StyledTreeItem nodeId="3" label="10 AM">
               <StyledTreeItem nodeId="9" label="Chhera Island" />
           </StyledTreeItem>
           <StyledTreeItem nodeId="4" label="3 PM">

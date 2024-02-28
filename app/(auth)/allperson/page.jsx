@@ -52,10 +52,11 @@ const page = () => {
             <li className="flex flex-col items-center justify-around"></li>
           </ul>
           <div className="p-4 border-t mx-8 mt-2">
+            <a href="/login"> 
             <button className="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold text-white px-6 py-2">
               {" "}
               Massage{" "}
-            </button>
+            </button> </a>
           </div>
         </div>
       ))}
