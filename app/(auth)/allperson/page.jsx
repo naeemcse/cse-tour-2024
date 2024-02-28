@@ -55,7 +55,7 @@ const page = () => {
             <a href="/login"> 
             <button className="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold text-white px-6 py-2">
               {" "}
-              Massage{" "}
+              Message{" "}
             </button> </a>
           </div>
         </div>

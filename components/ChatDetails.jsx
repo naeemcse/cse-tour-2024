@@ -58,11 +58,12 @@ const ChatDetails = ({ chatId }) => {
         }),
       });
 
+
      if (res.ok) {
       // Clear the text input
       setText("");
+      // fetchMessages();
       // Trigger a re-render by updating some state (e.g., update a counter)
-     
     } else {
       // If the response is not okay, throw an error with the status text
       throw new Error(`Failed to send message: ${res.statusText}`);
@@ -71,6 +72,7 @@ const ChatDetails = ({ chatId }) => {
     } catch (err) {
       console.log(err);
     }
+
   };
 
   const sendPhoto = async (result) => {
